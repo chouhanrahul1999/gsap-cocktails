@@ -1,10 +1,10 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { SplitText } from "gsap/all";
+import { ScrollTrigger, SplitText } from "gsap/all";
 import React, { useRef } from "react";
 import { useMediaQuery } from "react-responsive";
 
-
+gsap.registerPlugin(ScrollTrigger, SplitText);
 const Hero = () => {
   const videoRef = useRef();
 
@@ -49,7 +49,7 @@ const Hero = () => {
 
     const tl = gsap.timeline({
       scrollTrigger: {
-        trigger: "video",
+        trigger: ".video video",
         start: startValue,
         end: endValue,
         scrub: true,
