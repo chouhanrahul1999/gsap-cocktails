@@ -74,7 +74,7 @@ const Contact = () => {
         <div>
           <h3>Socials</h3>
 
-          <div className="flex-center gap-5">
+          <div className="flex-center gap-4">
             {socials.map((social) => (
               <a
                 href={social.url}
