@@ -8,7 +8,7 @@ const navLinks = [
 	title: "About Us",
  },
  {
-	id: "work",
+	id: "art",
 	title: "The Art",
  },
  {
@@ -120,17 +120,17 @@ const socials = [
  {
 	name: "Instagram",
 	icon: "/images/insta.png",
-	url: "#",
+	url: "https://www.linkedin.com/in/rahul-singh-8604b8221/",
  },
  {
 	name: "X (Twitter)",
 	icon: "/images/x.png",
-	url: "#",
+	url: "https://x.com/Rahulsingh90921?t=p5Vuu1evi6rl-Flrt_b-nQ&s=09",
  },
  {
 	name: "Facebook",
 	icon: "/images/fb.png",
-	url: "#",
+	url: "https://github.com/chouhanrahul1999/",
  },
 ];
 

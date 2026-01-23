@@ -57,12 +57,19 @@ const Hero = () => {
       },
     });
 
-    videoRef.current.onloadedmetadata = () => {
-      tl.to(videoRef.current, {
-        currentTime: videoRef.current.duration
-      })
+    if (videoRef.current) {
+      videoRef.current.onloadedmetadata = () => {
+        tl.to(videoRef.current, {
+          currentTime: videoRef.current.duration
+        })
+      }
     }
-  }, []);
+
+    return () => {
+      heroSplit.revert();
+      paragraphSplit.revert();
+    };
+  }, [isMobile]);
   return (
     <>
       <section id="hero" className="noisy">
